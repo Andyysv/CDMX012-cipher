@@ -2,12 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://w7.pngwing.com/pngs/731/9/png-transparent-encryption-computer-icons-favicon-encryption-ico-miscellaneous-purple-violet.png" sizes="32x32">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1 id= "webTitle">Cifrado</h1>
+      <p id= "textExplanation"> ¿Qué es el cifrado cesar? Cada letra del texto que escribas en la caja de texto de abajo será reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto. Este mensaje se presentara en la segunda caja.<br> 
+     <br>  En esta página podras cifrar un texto como si estuvieras comunicandote con una persona que esta en un país en guerra ¡Iniciemos! </p>
+<textarea name="cipherBox" id="cipherBox" cols="50" rows="9" required></textarea>
+<br>
+<input type="number" id="offset" min="1" max= "33">
+<button id="activatedButton"> Cifrar</button>
+<br>
+<button id= "desactivatedButton"> Descifrar </button>
+<p id="caja"> </p>
+<p id="caja2"> </p>
+<br>
     </div>
     <script src="index.js" type="module"></script>
   </body>
