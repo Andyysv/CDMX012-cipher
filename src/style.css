@@ -30,6 +30,9 @@ p{
 }
 
 #offset{
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
   text-align: center;
   margin: center;
   align-items: center;
@@ -37,15 +40,29 @@ p{
 }
 
 #activatedButton{
+  padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
   text-align: center;
   margin: center;
   align-items: center;
   justify-content: center;
 }
+ #activatedButton:hover{
+  color: #7dcfffef;
+  background-color: #ffffff
+}
 
 #desactivatedButton{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
   text-align: center;
   margin: center;
   align-items: center;
   justify-content: center;
+}
+#desactivatedButton:hover{
+  color: #7dcfffef;
+  background-color: #ffffff
 }
