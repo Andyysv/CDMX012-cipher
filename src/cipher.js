@@ -22,7 +22,6 @@ const cipher = {
         cipherMsn= cipherMsn + msnU[a];
       }
       console.log (cipherMsn)
-      //cipherMsn= cipherMsn + msnU[a];
     } 
     return cipherMsn;
   },
