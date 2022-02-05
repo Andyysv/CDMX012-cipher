@@ -1,11 +1,10 @@
 const cipher = {
   encode: (offset, msnU) => {
     let cipherMsn = '';
-    if (msnU === null || msnU === undefined) {
-    throw new TypeError ("No ingreso su texto");
-    } else {
-    if (offset === null ||undefined)
-    throw new TypeError ("No ingreso su número"); 
+    if (msnU === null || msnU === 0) {
+    throw new TypeError("No ingreso su texto"); 
+    } else if (offset === null ||0){
+    throw new TypeError("No ingreso su número"); 
     }
     //ciclo de string 
     for (let a = 0; a < msnU.length; a++) {
@@ -27,9 +26,9 @@ const cipher = {
   },
   decode: function (offset, msnU) {
     let cipherMsn = '';
-    if (msnU === null || msnU === undefined) {
+    if(msnU === null || msnU === 0) {
       throw new TypeError ("No ingreso su texto");
-      } else if (offset === null ||undefined) {
+      } else if(offset === null ||0) {
       throw new TypeError ("No ingreso su número"); 
       }
     for (let a = 0; a < msnU.length; a++) {
