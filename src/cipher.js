@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const cipher = {
   encode: (offset, msnU) => {
     let cipherMsn = '';
@@ -43,10 +44,10 @@ const cipher = {
         let nuevaLetra = String.fromCharCode(cifradoCesar2);
         cipherMsn += nuevaLetra;
         console.log(cipherMsn);
-      } else if (letraAscii >= 32 && letraAscii <= 47) {
+       } else if (letraAscii >= 32 && letraAscii <= 47) {
         cipherMsn= cipherMsn + msnU[a];
+        }
       }
-    }
     return cipherMsn;
   }
 }

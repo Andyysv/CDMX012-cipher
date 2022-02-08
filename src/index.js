@@ -1,5 +1,4 @@
 import cipher from './cipher.js';
-
      document.getElementById ("activatedButton").addEventListener("click", function(){
       let msnU = document.getElementById ("cipherBox").value;
        let offset = document.getElementById ("offset").value;
