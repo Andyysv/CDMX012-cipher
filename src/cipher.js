@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+
 const cipher = {
   encode: (offset, msnU) => {
     let cipherMsn = '';
